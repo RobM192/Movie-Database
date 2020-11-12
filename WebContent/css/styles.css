@@ -1,0 +1,107 @@
+h1 { color: white; font-family: 'Corben', Georgia, Times, serif; font-size: 40px; font-weight: 350; line-height: 40px; margin: 0 0 16px; }
+
+h2 { color: #787878; font-family: 'Corben', Georgia, Times, serif; font-size: 24px; font-weight: 550; line-height: 32px; margin: 0 0 14px; }
+
+h3 { color: #ff595e; font-family: 'Corben', Georgia, Times, serif; font-size: 20px; font-weight: 300; line-height: 32px; margin: 0 0 14px; }
+
+p { color: #222; font-family: 'Nobile', Helvetica, Arial, sans-serif; font-size: 15px; font-weight: 400; line-height: 24px; margin: 0 0 14px; }
+
+
+
+#mainTitle {
+	color: #4f4f4f;
+}
+
+#subheading {
+	color: #000000;
+}
+
+body {
+    font: normal 12px Verdana, Arial, sans-serif;
+    background-color: #c0c0c0;
+}
+
+fieldset {
+-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+background-color: #e6e6e6; 
+border: 5px solid white ;
+}
+
+button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+}
+
+button {
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=button] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:2px solid;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    font-family: 'Nobile', Helvetica, Arial, sans-serif;
+    box-shadow: 5px 10px #000000:
+}
+
+input[type=button]:hover {
+    background: #4CAF50; /* Green */ 
+}
+
+table.greyGridTable {
+  border: 2px solid #FFFFFF;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.greyGridTable td, table.greyGridTable th {
+  border: 1px solid #FFFFFF;
+  padding: 3px 4px;
+}
+table.greyGridTable tbody td {
+  font-size: 13px;
+}
+table.greyGridTable td:nth-child(even) {
+  background: #EBEBEB;
+}
+table.greyGridTable thead {
+  background: #FFFFFF;
+  border-bottom: 4px solid #333333;
+}
+table.greyGridTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+  border-left: 2px solid #333333;
+}
+table.greyGridTable thead th:first-child {
+  border-left: none;
+}
+
+table.greyGridTable tfoot td {
+  font-size: 14px;
+}

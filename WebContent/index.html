@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Films Database </title>
+<link rel="stylesheet" type = "text/css" href="css/styles.css"/>
+<link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
+ <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">
+
+<script src="scripts/jquery-3.4.1.js"></script>
+<script src="scripts/scripts.js"></script>
+<script src="scripts/jquery-ui.js"></script>
+
+</head>
+
+<body>
+<div align = "center">
+
+
+<h1 id="mainTitle"><b>MOVIE DATABASE</b></h1>
+<h2 id=subheading><i>Send and receive data asynchronously, using a variety of data formats</i></h2>
+<button onclick="window.location.href = 'http://localhost:9000/Film-Database-18058101-Final/'">Refresh</button>
+<br>
+<br>
+<fieldset>
+<h2> DISPLAY ALL FILMS:</h2>
+<form action = "GetAllFilms">
+<input type = "button" id = "button-GetAllFilms-JSON" value = "Display All Using JSON">
+</form>
+<h3 id="GetAllFilmsJSONMessage"></h3>
+<div id="getAllFilms-json-display"></div>
+<br>
+<form action = "GetAllFilms">
+<input type = "button" id = "button-GetAllFilms-XML" value = "Display All Using XML">
+</form> 
+<h3 id="GetAllFilmsXMLMessage"></h3>
+<div id="getAllFilms-xml-display"></div>
+<br>
+<form action = "GetAllFilms">
+<input type = "button" id = "button-GetAllFilms-Text" value = "Display All Using String">
+</form>
+<h3 id="GetAllFilmsTextMessage"></h3>
+<div id="getAllFilms-text-display"></div> 
+<br>
+</fieldset>
+<br>
+<fieldset>
+<h2> SEARCH FILMS BY TITLE:</h2>
+<form action = "GetFilm">
+<input type="text" id="getFilm-Search"/>
+</form>
+<br>
+<input type = "button" id = "button-GetFilm-JSON" value = "Search Using JSON">
+<h3 id="GetFilmJSONMessage" ></h3>
+<div id="getFilm-json-display"></div>
+<br>
+<input type = "button" id = "button-GetFilm-XML" value = "Search Using XML">
+<h3 id="GetFilmXMLMessage" ></h3>
+<div id="getFilm-xml-display"></div>
+<br>
+<input type = "button" id = "button-GetFilm-Text" value = "Search Using String">
+<h3 id="GetFilmTextMessage" ></h3>
+<div id="getFilm-text-display"></div>
+<br>
+</fieldset>
+<br>
+<fieldset>
+<h2> INSERT NEW FILM INTO DATABASE:</h2>
+<label>ID: <input type="text" id="insertFilmID"/> </label> 
+<label>Title: <input type="text" id="insertFilmTitle"/> </label>
+<label>Year: <input type="text" id="insertFilmYear"/> </label>
+<label>Director: <input type="text" id="insertFilmDirector"/> </label> 
+<label>Stars: <input type="text" id="insertFilmStars"/> </label>
+<label>Review: <input type="text" id="insertFilmReview"/> </label> 
+<br><br>
+<input type = "button" id = "button-InsertFilm" value = "Insert">
+<h3 id="insertFilmMessage" ></h3>
+</fieldset>
+<br>
+<fieldset>
+<h2> UPDATE EXISTING FILM IN DATABASE:</h2>
+<label>ID of the film to be updated: <input type="text" id="updateFilmID"/> </label> 
+<br><br>
+<label>Title: <input type="text" id="updateFilmTitle"/> </label>
+<label>Year: <input type="text" id="updateFilmYear"/> </label>
+<label>Director: <input type="text" id="updateFilmDirector"/> </label> 
+<label>Stars: <input type="text" id="updateFilmStars"/> </label>
+<label>Review: <input type="text" id="updateFilmReview"/> </label> 
+<br><br>
+<input type = "button" id = "button-UpdateFilm" value = "Update">
+<h3 id="updateFilmMessage" ></h3>
+</fieldset>
+<br>
+<fieldset>
+<h2> DELETE FILM FROM DATABASE:</h2>
+<label>ID of the film to be deleted: <input type="text" id="deleteFilmID"/> </label> 
+<input type = "button" id = "button-DeleteFilm" value = "Delete">
+<h3 id="deleteFilmMessage" ></h3>
+</fieldset>
+</div>
+</body> 
+</html>
